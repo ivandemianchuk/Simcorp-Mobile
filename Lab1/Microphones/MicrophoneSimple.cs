@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace Lab1
 {
-    public class ColorfulScreen : ScreenBase
+    class MicrophoneSimple : MicrophoneBase
     {
-        public override void Show(IScreenImage image)
+        public MicrophoneSimple()
         {
-            //here logic that draws colorful image can be added 
+            vMicrophoneType = "Simple";
         }
 
-        public override void Show(IScreenImage image, int brightness)
+        public override void Record()
         {
             throw new NotImplementedException();
         }
 
         public override string ToString()
         {
-            return "Colorful Screen";
+            return "Microphone " + vMicrophoneType;
         }
     }
 }

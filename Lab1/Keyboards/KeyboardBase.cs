@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Lab1
 {
-    class MicrophoneSimple : MicrophoneBase
+    public abstract class KeyboardBase
     {
-        public override string ToString()
-        {
-            return "Microphone Simple";
-        }
+        public List<int> Numbers { get { return vNumbers; } }
+        private List<int> vNumbers;
     }
 }

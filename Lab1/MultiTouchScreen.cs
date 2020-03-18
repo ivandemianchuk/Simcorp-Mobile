@@ -6,14 +6,8 @@ using System.Threading.Tasks;
 
 namespace Lab1
 {
-    public interface IScreenImage
+    class  MultiTouchScreen : BasicTouchScreen 
     {
-        int Width { get; set;  }
-        int Hight { get; set; }
-
-        int Size { get; set; }
-
-
 
     }
 }

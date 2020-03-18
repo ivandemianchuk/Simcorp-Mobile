@@ -9,7 +9,7 @@ namespace Lab1
     public abstract class Mobile
     {
         public abstract ScreenBase Screen{ get; }
-        public abstract DynamicBase Dynamic { get; }
+        public abstract SpeakerBase Dynamic { get; }
 
         public abstract BatteryBase Battery { get; }
         
@@ -22,7 +22,7 @@ namespace Lab1
 
 
 
-        public string GetDescription()
+        public override string ToString()
         {
 
             var descriptionBuilder = new StringBuilder();

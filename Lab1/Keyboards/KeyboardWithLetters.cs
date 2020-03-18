@@ -6,17 +6,14 @@ using System.Threading.Tasks;
 
 namespace Lab1
 {
-    public class OLEDScreen : ColorfulScreen
+    class KeyboardWithLetters : KeyboardSimple
     {
-        public override void Show(IScreenImage image)
-        {
-            //here logic for OLED screen can be added
-        }
+        public List<char> Letters { get { return vLetters; } }
+        private List<char> vLetters;
 
         public override string ToString()
         {
-            return "OLED Screen";
+            return "Keyboard with letters";
         }
-
     }
 }

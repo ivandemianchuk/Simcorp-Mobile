@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace Lab1
 {
-    public abstract class BatteryBase
+    public class SpeakerSimple :  SpeakerBase
     {
-        public int ChargePercents { get; set; }
-        public BatteryBase()
+
+        public override string ToString()
         {
-            ChargePercents = 100;
+            return "Dynamic Simple";
         }
+
 
     }
 }

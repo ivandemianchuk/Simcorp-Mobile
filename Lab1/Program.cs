@@ -11,7 +11,7 @@ namespace Lab1
         static void Main(string[] args)
         {
             SimcorpMobile Phone= new SimcorpMobile();
-            Console.WriteLine( Phone.GetDescription());
+            Console.WriteLine(Phone);
             Console.ReadKey();
         }
     }

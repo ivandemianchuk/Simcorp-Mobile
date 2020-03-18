@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace Lab1
 {
-    public abstract class KeyboardBase
+    public interface IScreenImage
     {
-        List<int> numbers;
+        int Width { get; set; }
+
+        int Hight { get; set; }
+
+        int Size { get; set; }
+
+
+
     }
 }

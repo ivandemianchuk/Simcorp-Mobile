@@ -6,15 +6,9 @@ using System.Threading.Tasks;
 
 namespace Lab1
 {
-    class BatterySimple :BatteryBase
+    class BatterySimple : BatteryBase
     {
-        public void Charge()
-        {
-            if (ChargePercents < 100)
-            {
-                ChargePercents = 100;
-            }
-        }
+
         public override string ToString()
         {
             return "Battery Simple";
