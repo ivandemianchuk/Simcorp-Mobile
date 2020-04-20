@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab2.Output
+namespace Lab.Output
 {
     public class RichTextBoxOutput : IOutput
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab2.Speakers
+namespace Lab.Speakers
 {
     public class SamsungHeadset : IPlayback
     {

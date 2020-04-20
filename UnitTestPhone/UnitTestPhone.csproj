@@ -51,6 +51,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="FakeOutput.cs" />
+    <Compile Include="UnitTestMessage.cs" />
     <Compile Include="UnitTestOutput.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -7,8 +7,8 @@
     <ProjectGuid>{E9FB2ABF-E6EF-44B1-9847-6E14188B87E4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Lab1</RootNamespace>
-    <AssemblyName>Lab1</AssemblyName>
+    <RootNamespace>Lab</RootNamespace>
+    <AssemblyName>Console</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

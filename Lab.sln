@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryPhone", "ClassL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestPhone", "UnitTestPhone\UnitTestPhone.csproj", "{C63F2707-E75F-4C6E-AC62-5A6FC342B9EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormSMS", "WinFormSMS\WinFormSMS.csproj", "{C47AF7B7-3A1C-4070-8370-DA1661775FC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C63F2707-E75F-4C6E-AC62-5A6FC342B9EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C63F2707-E75F-4C6E-AC62-5A6FC342B9EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C63F2707-E75F-4C6E-AC62-5A6FC342B9EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C47AF7B7-3A1C-4070-8370-DA1661775FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C47AF7B7-3A1C-4070-8370-DA1661775FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C47AF7B7-3A1C-4070-8370-DA1661775FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C47AF7B7-3A1C-4070-8370-DA1661775FC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

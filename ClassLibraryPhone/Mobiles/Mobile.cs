@@ -1,15 +1,17 @@
-﻿using Lab2.Batteries;
-using Lab2.Speakers;
+﻿using ClassLibraryPhone.Messages;
+using Lab.Batteries;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lab.Speakers;
 
-namespace Lab2
+namespace Lab
 {
     public abstract class Mobile
     {
+        public SMSProvider MyProperty { get; set; }
         public abstract ScreenBase Screen{ get; }
         public abstract SpeakerBase Speaker { get; }
 

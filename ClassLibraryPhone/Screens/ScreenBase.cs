@@ -1,7 +1,7 @@
-﻿using Lab2.Screens;
+﻿using Lab.Screens;
 using System.Text;
 
-namespace Lab2
+namespace Lab
 {
     public abstract class ScreenBase
     {

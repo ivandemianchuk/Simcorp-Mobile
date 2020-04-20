@@ -1,7 +1,7 @@
-﻿using Lab2;
+﻿using Lab;
 using System;
 
-namespace Lab2.Speakers
+namespace Lab.Speakers
 {
     public class iPhoneHeadset : IPlayback
     {

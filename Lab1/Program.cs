@@ -1,14 +1,14 @@
-﻿using Lab2;
-using Lab2.Batteries;
-using Lab2.Output;
-using Lab2.Speakers;
+﻿using Lab;
+using Lab.Batteries;
+using Lab.Output;
+using Lab.Speakers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab2
+namespace Lab
 {
     class Program
     {

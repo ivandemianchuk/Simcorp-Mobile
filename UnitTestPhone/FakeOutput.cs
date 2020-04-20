@@ -1,11 +1,11 @@
-﻿using Lab2;
+﻿using Lab;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab2.Output
+namespace Lab.Output
 {
     public class FakeOutput : IOutput
     {

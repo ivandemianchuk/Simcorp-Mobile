@@ -1,6 +1,6 @@
-﻿using Lab2;
-using Lab2.Output;
-using Lab2.Speakers;
+﻿using Lab;
+using Lab.Output;
+using Lab.Speakers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,9 +17,11 @@ namespace WindowsFormsApplication1
     {
         private IOutput Output;
         private readonly Mobile MobilePhone = new SimcorpMobile();
+        
         public Form1()
         {
             InitializeComponent();
+            MaximizeBox = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
