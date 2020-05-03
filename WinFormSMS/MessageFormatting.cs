@@ -27,11 +27,9 @@ namespace WinFormSMS
             provider.SMSReceived += new SMSReceivedDelegate(OnSMSReceived);
             phoneThread = new Thread(provider.GenerateSMS);
             phoneThread.Start();
-            
         }
         private void MessageFormatting_Load(object sender, EventArgs e)
         {
-
         }
 
         private void OnSMSReceived(string message)
@@ -39,9 +37,11 @@ namespace WinFormSMS
             if (richTextBoxMessages.InvokeRequired)
             {
                 richTextBoxMessages.Invoke(new SMSReceivedDelegate(OnSMSReceived), message);
-                return;
             }
-            richTextBoxMessages.AppendText(Formatter.FormatMethod(message));
+            else
+            {
+                richTextBoxMessages.AppendText(Formatter.FormatMethod(message));
+            }
         }
 
         private void richTextBoxMessages_TextChanged(object sender, EventArgs e)
