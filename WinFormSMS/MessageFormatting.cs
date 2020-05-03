@@ -28,7 +28,6 @@ namespace WinFormSMS
             phoneThread = new Thread(provider.GenerateSMS);
             phoneThread.Start();
             
-
         }
         private void MessageFormatting_Load(object sender, EventArgs e)
         {
