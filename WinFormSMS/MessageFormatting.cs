@@ -18,6 +18,7 @@ namespace WinFormSMS
     {
 
         private readonly MessageFormatter Formatter = new MessageFormatter();
+        private delegate void SafeCallDelegate(string text);
 
         private Thread phoneThread;
         public MessageFormatting()
@@ -38,6 +39,7 @@ namespace WinFormSMS
         {
             if (richTextBoxMessages.InvokeRequired)
             {
+                var d = new SafeCallDelegate(OnSMSReceived);
                 richTextBoxMessages.Invoke(new SMSReceivedDelegate(OnSMSReceived), message);
                 return;
             }
