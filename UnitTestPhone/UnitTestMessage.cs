@@ -15,11 +15,11 @@ namespace UnitTestPhone
         public void NoFormat()
         {
             MessageFormatter messageFormatter = new MessageFormatter();
-            string message = "This is test";
+            Message message = new Message("Ivan","This is test",DateTime.Now);
 
-            string result = messageFormatter.FormatMethod(message);
+            Message result = messageFormatter.FormatMethod(message);
 
-            Assert.AreEqual(message + Environment.NewLine, result);
+            Assert.AreEqual(new Message("Ivan","This is test\r\n",message.ReceivingTime ), result);
         }
 
 
@@ -28,10 +28,11 @@ namespace UnitTestPhone
         {
             var messageFormatter = new MessageFormatter();
             messageFormatter.FormatMethod = messageFormatter.UpperCaseFormat;
+            Message message = new Message("Ivan", "This is test", DateTime.Now);
 
-            var result = messageFormatter.FormatMethod("This is test");
+            var result = messageFormatter.FormatMethod(message);
 
-            Assert.AreEqual(("THIS IS TEST" + Environment.NewLine), result);
+            Assert.AreEqual(new Message("Ivan","THIS IS TEST" + Environment.NewLine,message.ReceivingTime), result);
         }
 
         [TestMethod]
@@ -39,10 +40,11 @@ namespace UnitTestPhone
         {
             var messageFormatter = new MessageFormatter();
             messageFormatter.FormatMethod = messageFormatter.LowerCaseFormat;
+            Message message = new Message("Ivan", "This is test", DateTime.Now);
 
-            var result = messageFormatter.FormatMethod("This is test");
+            var result = messageFormatter.FormatMethod(message);
 
-            Assert.AreEqual(("this is test" + Environment.NewLine), result);
+            Assert.AreEqual(new Message("Ivan","this is test" + Environment.NewLine,message.ReceivingTime), result);
         }
     }
 }

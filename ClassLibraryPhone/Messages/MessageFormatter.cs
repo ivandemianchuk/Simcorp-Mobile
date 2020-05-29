@@ -8,38 +8,44 @@ using System.Threading.Tasks;
 {
     public class MessageFormatter
     {
-        public delegate string FormatDelegate(string text);
+        public delegate Message FormatDelegate(Message text);
 
         public MessageFormatter()
         {
             FormatMethod = NoFormat;
         }
 
-        public string NoFormat(string message)
+        public Message NoFormat(Message message)
         {
-            return message + Environment.NewLine; 
+            string text = message.Text + Environment.NewLine;
+            return new Message(message.User, text, message.ReceivingTime);
         }
 
         public FormatDelegate FormatMethod { get; set; }
 
-        public string StartWithDateTimeFormat(string message)
+        public Message StartWithDateTimeFormat(Message message)
         {
-            return $"{TimeNow()} {message}" + Environment.NewLine;
+            string text = $"[{message.ReceivingTime}] {message.Text}" + Environment.NewLine;
+            return new Message(message.User, text, message.ReceivingTime);
+
         }
 
-        public string EndWithDateTimeFormat(string message)
+        public Message EndWithDateTimeFormat(Message message)
         {
-            return $"{message} {TimeNow()}" + Environment.NewLine;
+            string text = $"{message.Text} [{message.ReceivingTime}]" + Environment.NewLine;
+            return new Message(message.User, text, message.ReceivingTime);
         }
 
-        public string UpperCaseFormat(string message)
+        public Message UpperCaseFormat(Message message)
         {
-            return message.ToUpper() + Environment.NewLine;
+            string text = message.Text.ToUpper() + Environment.NewLine;
+            return new Message(message.User, text, message.ReceivingTime);
         }
 
-        public string LowerCaseFormat(string message)
+        public Message LowerCaseFormat(Message message)
         {
-            return message.ToLower() + Environment.NewLine;
+            string text = message.Text.ToLower() + Environment.NewLine;
+            return new Message(message.User, text, message.ReceivingTime);
         }
         public static string TimeNow()
         {

@@ -22,6 +22,10 @@ namespace Lab
 
        public abstract SimCardBase SimCard { get; }
 
+        public abstract MessageStorage Messages { get; }
+
+        public abstract SMSProvider Provider { get; }
+
         public abstract void Call();
 
         public IPlayback PlaybackComponent { get; set; }
@@ -52,6 +56,9 @@ namespace Lab
 
             return descriptionBuilder.ToString();
         }
+
+        public abstract void StartSendMessages(int count);
+        public abstract void StartSendMessages();
 
 
         private void Show(IScreenImage image)

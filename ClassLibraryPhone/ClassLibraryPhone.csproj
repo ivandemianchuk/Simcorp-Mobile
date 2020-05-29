@@ -49,7 +49,9 @@
     <Compile Include="Keyboards\KeyboardBase.cs" />
     <Compile Include="Keyboards\KeyboardSimple.cs" />
     <Compile Include="Keyboards\KeyboardWithLetters.cs" />
+    <Compile Include="Messages\Message.cs" />
     <Compile Include="Messages\MessageFormatter.cs" />
+    <Compile Include="Messages\MessageStorage.cs" />
     <Compile Include="Messages\SMSProvider.cs" />
     <Compile Include="Microphones\MicrophoneBase.cs" />
     <Compile Include="Microphones\MicrophoneSimple.cs" />
